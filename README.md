@@ -3,7 +3,7 @@
 This README describes the implementation of the Path Planning Project – the README uses the rubric points as the reference template. 
 
 ## VALID TRAJECTORIES
-* Driving at least 4.32 miles without incident
+A. Driving at least 4.32 miles without incident
 
 The car drives the stipulated distance without any errors – a sample image is shown below where the car has driven 4.32 miles in around 5.5 minutes.
 
@@ -14,19 +14,19 @@ The car was also taken for a long drive – it drove without incident for 30 min
 ![Long Drive](https://github.com/siddharth-ravi/CarND-Path-Planning-Project/tree/master/images/longdrive.JPG)
 
 
-A. Speed limit observance
+B. Speed limit observance
 
 The car does not cross the speed limit once as the target speed is set to 49.5 mph. It also has a cost for going below the speed limit and goes below the speed limit only due to obstruction. 
 
-B. Max acceleration and jerk limits observance / no collisions
+C. Max acceleration and jerk limits observance / no collisions
 
 The car slows down or speeds up at rates within the acceleration and jerk limits.  The only exception is if the car is within 5m of the car ahead when it brakes sharply to avoid a collision. This usually happens only in case the car ahead brakes sharply on the highway and this behavior has been implemented as high jerk is preferable to a collision. 
 
-C. Staying in the lane
+D. Staying in the lane
 
 The car stays in its lane using trajectory points having d values corresponding to the center of the lanes.  Trajectory points have been generated using splines based on the FAQ video for the project. 
 
-D. Changing lanes
+E. Changing lanes
 
 The car can change lanes if blocked by a slow moving vehicle ahead.  The detailed cost based logic is described in the ‘Reflection’ section below.
 
@@ -36,7 +36,7 @@ The car can change lanes if blocked by a slow moving vehicle ahead.  The detaile
 
 A finite state machine was used for path planning.  The following table describes the states and the situations in which they are triggered.  The statements below are also included as comments in the code for easy understanding of the code. 
 
-<TABLE 1>
+![FSM](https://github.com/siddharth-ravi/CarND-Path-Planning-Project/tree/master/images/fsm.JPG)
 
 The following is an illustration of how the code uses costs to trigger the best state for the situation.
 
@@ -48,7 +48,7 @@ The cost of doing nothing has been set to 0.98 so that the state is selected onl
 
 A high cost of 1 is used for a left lane change if the SDC is already in the left most lane or for a corresponding right lane situation.  This is to put a hard constraint on illegal movements. 
 
-<TABLE 2>
+![COSTS](https://github.com/siddharth-ravi/CarND-Path-Planning-Project/tree/master/images/costs.JPG)
 
 A separate header file ‘pp.h’ has been created with action functions for each of the above states.  This has been included in the source code. 
 A video has also been created for a short duration of driving. 
