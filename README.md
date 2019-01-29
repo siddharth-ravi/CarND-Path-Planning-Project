@@ -14,29 +14,29 @@ The car was also taken for a long drive – it drove without incident for 30 min
 ![Long Drive](https://github.com/siddharth-ravi/CarND-Path-Planning-Project/tree/master/images/longdrive.JPG)
 
 
-* Speed limit observance
+A. Speed limit observance
 
 The car does not cross the speed limit once as the target speed is set to 49.5 mph. It also has a cost for going below the speed limit and goes below the speed limit only due to obstruction. 
 
-* Max acceleration and jerk limits observance / no collisions
+B. Max acceleration and jerk limits observance / no collisions
 
 The car slows down or speeds up at rates within the acceleration and jerk limits.  The only exception is if the car is within 5m of the car ahead when it brakes sharply to avoid a collision. This usually happens only in case the car ahead brakes sharply on the highway and this behavior has been implemented as high jerk is preferable to a collision. 
 
-* Staying in the lane
+C. Staying in the lane
 
 The car stays in its lane using trajectory points having d values corresponding to the center of the lanes.  Trajectory points have been generated using splines based on the FAQ video for the project. 
 
-* Changing lanes
+D. Changing lanes
 
 The car can change lanes if blocked by a slow moving vehicle ahead.  The detailed cost based logic is described in the ‘Reflection’ section below.
 
 ## REFLECTION
 
-* Path Generation
+### Path Generation
 
 A finite state machine was used for path planning.  The following table describes the states and the situations in which they are triggered.  The statements below are also included as comments in the code for easy understanding of the code. 
 
-<TABLE>
+<TABLE 1>
 
 The following is an illustration of how the code uses costs to trigger the best state for the situation.
 
