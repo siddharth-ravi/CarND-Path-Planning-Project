@@ -7,7 +7,7 @@ A. Driving at least 4.32 miles without incident
 
 The car drives the stipulated distance without any errors – a sample image is shown below where the car has driven 4.32 miles in around 5.5 minutes.
 
-![Short Drive](https://github.com/siddharth-ravi/CarND-Path-Planning-Project/tree/master/images/shortdrive.JPG)
+![Short Drive](https://raw.githubusercontent.com/siddharth-ravi/CarND-Path-Planning-Project/tree/master/images/shortdrive.JPG)
 
 The car was also taken for a long drive – it drove without incident for 30 minutes at an average speed of 43 mph due to heavy congestion in a few sections. 
 
