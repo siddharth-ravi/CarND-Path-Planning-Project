@@ -1,5 +1,4 @@
-# Udacity Self Driving Car Program :  CarND-Path-Planning-Project
-Self-Driving Car Engineer Nanodegree Program
+# Udacity Self-Driving Car Engineer Nanodegree Program :  CarND-Path-Planning-Project
 
 This README describes the implementation of the Path Planning Project – the README uses the rubric points as the reference template. 
 
