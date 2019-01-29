@@ -1,6 +1,8 @@
 # Udacity Self-Driving Car Engineer Nanodegree Program :  CarND-Path-Planning-Project
 
 This README describes the implementation of the Path Planning Project – the README uses the rubric points as the reference template. 
+[//]: # (References)
+[long drive]: ./images/longdrive.JPG
 
 ## VALID TRAJECTORIES
 A. Driving at least 4.32 miles without incident
@@ -13,6 +15,7 @@ The car was also taken for a long drive – it drove without incident for 30 min
 
 ![Long Drive](https://github.com/siddharth-ravi/CarND-Path-Planning-Project/tree/master/images/longdrive.JPG)
 
+![Long Drive][long drive]
 
 B. Speed limit observance
 
