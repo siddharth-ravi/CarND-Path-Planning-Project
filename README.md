@@ -9,7 +9,7 @@ The car drives the stipulated distance without any errors – a sample image is 
 
 ![alt text][logo]
 
-[logo]:https://github.com/siddharth-ravi/CarND-Path-Planning-Project/tree/master/images/LongDrive.JPG
+[logo]: https://github.com/siddharth-ravi/CarND-Path-Planning-Project/tree/master/images/LongDrive.jpg
 
 
 The car was also taken for a long drive – it drove without incident for 30 minutes at an average speed of 43 mph due to heavy congestion in a few sections. 
