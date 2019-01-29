@@ -29,7 +29,9 @@ The car can change lanes if blocked by a slow moving vehicle ahead.  The detaile
 ## REFLECTION
 
 * Path Generation
+
 A finite state machine was used for path planning.  The following table describes the states and the situations in which they are triggered.  The statements below are also included as comments in the code for easy understanding of the code. 
+
 <TABLE>
 
 The following is an illustration of how the code uses costs to trigger the best state for the situation.
