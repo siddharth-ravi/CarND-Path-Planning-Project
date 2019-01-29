@@ -7,7 +7,7 @@ This README describes the implementation of the Path Planning Project – the RE
 
 The car drives the stipulated distance without any errors – a sample image is shown below where the car has driven 4.32 miles in around 5.5 minutes.
 
-![alt text][logo]
+![alt text][(https://github.com/siddharth-ravi/CarND-Path-Planning-Project/tree/master/images/LongDrive.jpg)]
 
 [logo]: https://github.com/siddharth-ravi/CarND-Path-Planning-Project/tree/master/images/LongDrive.jpg
 
