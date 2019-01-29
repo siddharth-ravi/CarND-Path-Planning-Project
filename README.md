@@ -7,7 +7,7 @@ This README describes the implementation of the Path Planning Project – the RE
 [longdrive]: ./images/longdrive.JPG
 
 ## VALID TRAJECTORIES
-A. Driving at least 4.32 miles without incident
+### A. Driving at least 4.32 miles without incident
 
 The car drives the stipulated distance without any errors – a sample image is shown below where the car has driven 4.32 miles in around 5.5 minutes.
 
@@ -18,19 +18,19 @@ The car was also taken for a long drive – it drove without incident for 30 min
 ![Long Drive](./images/longdrive.JPG)
 
 
-B. Speed limit observance
+### B. Speed limit observance
 
 The car does not cross the speed limit once as the target speed is set to 49.5 mph. It also has a cost for going below the speed limit and goes below the speed limit only due to obstruction. 
 
-C. Max acceleration and jerk limits observance / no collisions
+### C. Max acceleration and jerk limits observance / no collisions
 
 The car slows down or speeds up at rates within the acceleration and jerk limits.  The only exception is if the car is within 5m of the car ahead when it brakes sharply to avoid a collision. This usually happens only in case the car ahead brakes sharply on the highway and this behavior has been implemented as high jerk is preferable to a collision. 
 
-D. Staying in the lane
+### D. Staying in the lane
 
 The car stays in its lane using trajectory points having d values corresponding to the center of the lanes.  Trajectory points have been generated using splines based on the FAQ video for the project. 
 
-E. Changing lanes
+### E. Changing lanes
 
 The car can change lanes if blocked by a slow moving vehicle ahead.  The detailed cost based logic is described in the ‘Reflection’ section below.
 
