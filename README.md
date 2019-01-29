@@ -52,7 +52,7 @@ The cost of doing nothing has been set to 0.98 so that the state is selected onl
 
 A high cost of 1 is used for a left lane change if the SDC is already in the left most lane or for a corresponding right lane situation.  This is to put a hard constraint on illegal movements. 
 
-![COSTS](./images/costs.PNG)
+![COSTS](./images/costs.JPG)
 
 A separate header file ‘pp.h’ has been created with action functions for each of the above states.  This has been included in the source code. 
 A video has also been created for a short duration of driving. 
