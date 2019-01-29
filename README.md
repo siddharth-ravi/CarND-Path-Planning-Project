@@ -1,5 +1,18 @@
-# CarND-Path-Planning-Project
+# Udacity Self Driving Car Program :  CarND-Path-Planning-Project
 Self-Driving Car Engineer Nanodegree Program
+
+This README describes the implementation of the Path Planning Project – the README uses the rubric points as the reference template. 
+
+## VALID TRAJECTORIES
+** Driving at least 4.32 miles without incident
+The car drives the stipulated distance without any errors – a sample image is shown below where the car has driven 4.32 miles in around 5.5 minutes.
+
+The car was also taken for a long drive – it drove without incident for 30 minutes at an average speed of 43 mph due to heavy congestion in a few sections. 
+
+
+
+
+
 
 
 # Original Udacity README
