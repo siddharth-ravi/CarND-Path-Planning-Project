@@ -1,21 +1,22 @@
 # Udacity Self-Driving Car Engineer Nanodegree Program :  CarND-Path-Planning-Project
 
 This README describes the implementation of the Path Planning Project – the README uses the rubric points as the reference template. 
+
 [//]: # (References)
-[long drive]: ./images/longdrive.JPG
+
+[longdrive]: ./images/longdrive.JPG
 
 ## VALID TRAJECTORIES
 A. Driving at least 4.32 miles without incident
 
 The car drives the stipulated distance without any errors – a sample image is shown below where the car has driven 4.32 miles in around 5.5 minutes.
 
-![Short Drive](https://raw.githubusercontent.com/siddharth-ravi/CarND-Path-Planning-Project/tree/master/images/shortdrive.JPG)
+![Short Drive](./images/shortdrive.JPG)
 
 The car was also taken for a long drive – it drove without incident for 30 minutes at an average speed of 43 mph due to heavy congestion in a few sections. 
 
-![Long Drive](https://github.com/siddharth-ravi/CarND-Path-Planning-Project/tree/master/images/longdrive.JPG)
+![Long Drive](./images/longdrive.JPG)
 
-![Long Drive][long drive]
 
 B. Speed limit observance
 
@@ -39,7 +40,7 @@ The car can change lanes if blocked by a slow moving vehicle ahead.  The detaile
 
 A finite state machine was used for path planning.  The following table describes the states and the situations in which they are triggered.  The statements below are also included as comments in the code for easy understanding of the code. 
 
-![FSM](https://github.com/siddharth-ravi/CarND-Path-Planning-Project/tree/master/images/fsm.JPG)
+![FSM](./images/fsm.JPG)
 
 The following is an illustration of how the code uses costs to trigger the best state for the situation.
 
@@ -51,7 +52,7 @@ The cost of doing nothing has been set to 0.98 so that the state is selected onl
 
 A high cost of 1 is used for a left lane change if the SDC is already in the left most lane or for a corresponding right lane situation.  This is to put a hard constraint on illegal movements. 
 
-![COSTS](https://github.com/siddharth-ravi/CarND-Path-Planning-Project/tree/master/images/costs.PNG)
+![COSTS](./images/costs.PNG)
 
 A separate header file ‘pp.h’ has been created with action functions for each of the above states.  This has been included in the source code. 
 A video has also been created for a short duration of driving. 
