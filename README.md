@@ -18,6 +18,11 @@ The car was also taken for a long drive – it drove without incident for 30 min
 ![Long Drive](./images/longdrive.JPG)
 
 
+The planner was able to shift from the leftmost to the rightmost lane if it saw it was relatively clear. 
+![Complex Lane Change](./images/Car_PP1.gif)
+
+
+
 ### B. Speed limit observance
 
 The car does not cross the speed limit once as the target speed is set to 49.5 mph. It also has a cost for going below the speed limit and goes below the speed limit only due to obstruction. 
